@@ -1,0 +1,41 @@
+primer comando
+cd /home/pi/.local/lib/python3.7/site-packages/cv2
+segundo comando
+#--------------------------------
+ldd cv2.cpython-37m-arm-linux-gnueabihf.so | grep "not found"
+
+
+se encontrara quizas:
+        libcblas.so.3 => not found
+        libatlas.so.3 => not found
+        libjasper.so.1 => not found
+        libQtGui.so.4 => not found
+        libQtTest.so.4 => not found
+        libQtCore.so.4 => not found
+==3.4.3.18o 3.4.7.28 vs 4.1.0.25
+instalar
+sudo apt install apt-file
+actualizar
+sudo apt-file update
+
+apt-file search libcblas.so.3
+apt-file search libatlas.so.3
+apt-file search libjasper.so.1
+apt-file search libQtGui.so.4
+apt-file search libQtTest.so.4
+apt-file search libQtCore.so.4
+#instalar uno a uno
+sudo apt install libatlas3-base
+sudo apt install libatlas3-base
+sudo apt install libjasper1
+sudo apt install libqtgui4
+sudo apt install libqt4-test
+sudo apt install libjasper1
+#------------
+sudo pip3 install pillow
+cv2.cascadeClassifier()
+#opencv(imagenes)
+#scikit-learn (algortimos de machine learning)
+sudo pip3 install scikit-learn
+pip install scikit-learn
+#TENSORFLOW ,PYTORCH , THEANO, KERAS (API)
